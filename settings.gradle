@@ -1,0 +1,2 @@
+include 'ProyectoEJB', 'ProyectoWeb', 'ProyectoEAR'
+rootProject.name='Proyecto'

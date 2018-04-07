@@ -1,0 +1,21 @@
+apply plugin: 'ear'
+apply plugin: 'java'
+apply plugin: 'war'
+
+group = 'co.edw.proyecto'
+
+test.dependsOn(":ProyectoEJB:test",":ProyectoWeb:test")
+
+repositories {
+	mavenCentral();		
+}
+
+
+dependencies {
+	deploy project(path:':ProyectoEJB', configuration:'archives')
+	deploy project(path:':ProyectoWeb', configuration:'archives')
+}
+
+ear {
+	archiveName = "${baseName}.${extension}"
+}
