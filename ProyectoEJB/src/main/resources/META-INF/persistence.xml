@@ -11,6 +11,8 @@
 	    -->
 	    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <jta-data-source>java:app/jdbc/ProyectoDS</jta-data-source>
+        <class>co.edw.proyecto.persistence.Empleados</class>
+        <class>co.edw.proyecto.persistence.Grupos</class>
         <!--
         <properties>
             <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>

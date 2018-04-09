@@ -11,6 +11,7 @@ group = 'co.edw.proyecto'
 dependencies {
 	providedCompile project(':ProyectoEJB')
 	//providedCompile 'org.jboss.spec:jboss-javaee-6.0:3.0.3.Final'
+	providedCompile 'javax:javaee-api:8.0'	
 	testCompile 'junit:junit:4.11'
 	testCompile 'org.mockito:mockito-all:1.9.5'
 	testCompile 'org.easytesting:fest-assert-core:2.0M10'
